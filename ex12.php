@@ -10,28 +10,28 @@ function analisarProdutos($produtos, $pesquisa)
     $encontrado = "Produto não encontrado.";
 
     foreach ($produtos as $nome => $preco) {
-        // Produto mais caro
+        
         if ($preco > $maiorPreco) {
             $maiorPreco = $preco;
             $maisCaro = $nome;
         }
 
-        // Produto mais barato
+        
         if ($preco < $menorPreco) {
             $menorPreco = $preco;
             $maisBarato = $nome;
         }
 
-        // Soma dos preços
+        
         $soma += $preco;
 
-        // Pesquisa do produto
+        
         if (strtolower($nome) == strtolower($pesquisa)) {
             $encontrado = "Produto encontrado: $nome - R$ " . number_format($preco, 2, ",", ".");
         }
     }
 
-    // Média dos preços
+    
     $media = $soma / count($produtos);
 
     return [
@@ -42,7 +42,7 @@ function analisarProdutos($produtos, $pesquisa)
     ];
 }
 
-// Exemplo de uso
+
 $produtos = [
     "Arroz" => 25.50,
     "Feijão" => 9.80,

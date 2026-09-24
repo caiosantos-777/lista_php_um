@@ -23,7 +23,7 @@ function calcularDesconto($valorCompra) {
     ];
 }
 
-// Exemplo
+
 $resultado = calcularDesconto(1200);
 
 echo "Valor original: R$ " . number_format($resultado["valorOriginal"], 2, ",", ".") . "<br>";

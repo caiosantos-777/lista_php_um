@@ -1,7 +1,7 @@
 <?php
 
 function converterTemperatura($valor, $origem, $destino) {
-    // Converte a temperatura de origem para Celsius
+    
     switch (strtoupper($origem)) {
         case "C":
             $celsius = $valor;
@@ -19,7 +19,7 @@ function converterTemperatura($valor, $origem, $destino) {
             return "Escala de origem inválida!";
     }
 
-    // Converte de Celsius para a escala de destino
+    
     switch (strtoupper($destino)) {
         case "C":
             return $celsius;
@@ -35,7 +35,7 @@ function converterTemperatura($valor, $origem, $destino) {
     }
 }
 
-// Exemplos
+
 echo "25°C para Fahrenheit: " . converterTemperatura(25, "C", "F") . " °F<br>";
 echo "100°F para Celsius: " . converterTemperatura(100, "F", "C") . " °C<br>";
 echo "0°C para Kelvin: " . converterTemperatura(0, "C", "K") . " K<br>";

@@ -16,7 +16,7 @@ function analisarTexto($texto) {
     ];
 }
 
-// Exemplo
+
 $texto = "O PHP e uma linguagem de programacao.";
 
 $resultado = analisarTexto($texto);

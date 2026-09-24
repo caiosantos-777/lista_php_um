@@ -12,7 +12,7 @@ function gerarSenha($quantidade) {
     return $senha;
 }
 
-// Exemplo
+
 echo "Senha gerada: " . gerarSenha(10);
 
 ?>

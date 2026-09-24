@@ -1,6 +1,6 @@
 <?php
 
-// Função para criptografar
+
 function criptografarMensagem($texto, $deslocamento = 3)
 {
     $resultado = "";
@@ -19,7 +19,7 @@ function criptografarMensagem($texto, $deslocamento = 3)
     return $resultado;
 }
 
-// Função para descriptografar
+
 function descriptografarMensagem($texto, $deslocamento = 3)
 {
     $resultado = "";
@@ -38,7 +38,7 @@ function descriptografarMensagem($texto, $deslocamento = 3)
     return $resultado;
 }
 
-// Exemplo de uso
+
 $mensagem = "Ola Mundo";
 
 $criptografada = criptografarMensagem($mensagem);
